@@ -149,9 +149,9 @@ My final model results were:
 
 * Architecture
 
-I tried deeper model with good characteristics in theory. Like two 3x3 layers instead of a 5x5, so fewer weights in total while they are basically equivalent in fact if you think about the effective receptive field size the 2nd 3x3 has on the inputs to the 1st 3x3. Padding the activations to keep the pixels on the edges around in the network depth-wise.
+I tried deeper model with good characteristics in theory. Like two 3x3 conv layers instead of a 5x5, so fewer weights in total while they are basically equivalent in fact if you think about the effective receptive field size the 2nd 3x3 has on the inputs to the 1st 3x3. Padding the activations to keep the pixels on the edges around longer in the network depth-wise.
 
-But it has the increasing gap probelm. So I didn't end up with using it.
+But it has the increasing gap problem. So I didn't end up with using it.
 
 * Data Augmentation
 The only useful augmentation is turning RGB images to gray scale. It bumps the result by 2% on the vanilla LeNet-5 without regularization.
